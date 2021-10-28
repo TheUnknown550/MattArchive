@@ -2,7 +2,7 @@ import youtube_dl
 def YtDownloader():
     video_url = input("please enter youtube video url:")
     video_info = youtube_dl.YoutubeDL().extract_info(
-        url = video_url,download=True
+        url = video_url,download=False
     )
     filename = f"{video_info['title']}.mp3"
     options={

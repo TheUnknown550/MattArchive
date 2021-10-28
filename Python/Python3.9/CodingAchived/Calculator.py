@@ -1,5 +1,5 @@
-x=int(input("Enter ur first number: "))
-y=int(input("Enter ur second number: "))
+x=float(input("Enter ur first number: "))
+y=float(input("Enter ur second number: "))
 print("1:Plus")
 print("2:Minus")
 print("3:Multiply")
