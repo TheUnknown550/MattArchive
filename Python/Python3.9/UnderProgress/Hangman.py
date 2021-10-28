@@ -1,9 +1,13 @@
 word=input("Enter your word: ")
 n=len(word)
-correct=[]
+wor=[]
+counter = 0
 while True:
     Guess=input("enter your guess: ")
-    for i in range(n):
-        if (word[i] == Guess):
-            correct.append(i)
-    print(word[correct])
+    for i in range (n):
+        cor=word.find(Guess,i)
+        wor.append(i)
+        wor[i]='_'
+        wor.pop(cor)
+        wor[cor]=Guess
+        print(cor)
