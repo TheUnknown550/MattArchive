@@ -1,3 +1,4 @@
-word='hello'
-x=word.find('l',5)
-print(x)
+for i in range(5):
+    word='hello'
+    x=word.index('l',i)
+    print(x)

@@ -1,9 +1,18 @@
 word=input("Enter your word: ")
 n=len(word)
-wor=[]
+wor=[n]
 counter = 0
-while True:
-    guess=input("Enter your Guess: ")
+def find_w(n,guess,word):
     for i in range(n):
-        wor[i]='_'
-        find=word.find(guess)
+        find=word.index(i)
+        if i==find:
+            print(guess,end='')
+        else:
+            print('_',end='')
+            
+for i in range (n):
+    guess=input("Enter your guess: ")
+    if guess in word:
+        find_w(n,guess,word)
+    else:
+        print("your letter is not in the word.") 
