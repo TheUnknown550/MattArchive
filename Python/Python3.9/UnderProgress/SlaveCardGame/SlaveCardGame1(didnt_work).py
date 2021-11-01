@@ -19,7 +19,7 @@ def card_converter(n):
         elif n==3:
             Card='H_A'
         elif n==4:
-                Card='S_A'
+            Card='S_A'
         elif n==5:
             Card='C_2'
         elif n==6:
