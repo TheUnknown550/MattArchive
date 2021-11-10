@@ -7,7 +7,7 @@ recog = sr.Recognizer()
 recog
 def ytDownload(URL):
     video_url = URL
-    video_info = youtube_dl.YoutubeDL().extract_info(
+    video_info = youtube_dl.YoutcubeDL().extract_info(
         url = video_url,download=False
     )
     filename = f"{video_info['title']}.mp3"
