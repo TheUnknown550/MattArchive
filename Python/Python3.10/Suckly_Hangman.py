@@ -14,5 +14,5 @@ while True:
         break
     else:
         print("Your letter is not in the word")
-        print("your have ", lives,"lives")
         lives -= 1
+        print("your have ", lives,"lives")
